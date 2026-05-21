@@ -165,3 +165,10 @@ int main()
         SDL_Delay(16);
     }
 }
+
+/*
+    for future uploads use:
+    git add .
+    git commit -m "Describe changes"
+    git push
+*/
