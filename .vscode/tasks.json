@@ -1,0 +1,37 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Build SDL2 Project",
+            "type": "shell",
+            "command": "C:/msys64/mingw64/bin/gcc.exe",
+            "args": [
+                "-Wall",
+                "-Wextra",
+                "-Wpedantic",
+                "-std=c17",
+
+                "bouncy_ball.c",
+
+                "-o",
+                "bouncy_ball.exe",
+
+                "-IC:/msys64/mingw64/include/SDL2",
+
+                "-LC:/msys64/mingw64/lib",
+
+                "-lmingw32",
+                "-lSDL2main",
+                "-lSDL2"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "detail": "Build SDL2 project with warnings"
+        }
+    ]
+}
